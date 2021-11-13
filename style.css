@@ -1,0 +1,107 @@
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border-style: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+p {
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding: 0% 5%;
+}
+a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    cursor: pointer;
+}
+h3{
+    color: hsl(223, 47%, 23%);
+}
+button {
+    cursor: pointer;
+}
+.container {
+    background-color: white;
+    border-radius: 25px;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 375px;
+}
+.container-plan {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    text-align: left;
+}
+.hero {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.title {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.accept {
+    width: 85%;
+    margin: auto;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 5%;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: 900;
+    box-shadow: 0px 15px rgb(236, 236, 236);
+}
+.accept:hover {
+    background-color: hsl(245, 76%, 33%);
+    transition: .5s;
+}
+.reject {
+    width: 85%;
+    margin: auto;
+    color: hsl(224, 23%, 55%);
+    padding: 0% 5% 7% 5%;
+    background: none;
+    font-size: 1em;
+    font-weight: 900;
+}
+.attribution {
+    margin: auto;
+    padding: 50px 0%;
+    text-align: center;
+}
+
+@media(min-width: 600px) {
+    body {
+        background: url(./images/pattern-background-desktop.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-color: hsl(225, 100%, 94%);
+    }
+}
